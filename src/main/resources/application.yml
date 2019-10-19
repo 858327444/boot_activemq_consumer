@@ -1,0 +1,13 @@
+server:
+  port: 8888
+
+spring:
+  activemq:
+    broker-url: tcp://localhost:61616 # 自己的MQ服务器地址,正常应该用linux的,我在自己mac本直接开发了..
+    user: admin
+    password: admin
+  jms:
+    pub-sub-domain: false   # 写false,认为是Queue    写true,认为是Topic,不写默认是false,严格点  写上,以免有问题
+
+# 自己定义的队列名称
+myqueue: boot-active-queue
