@@ -1,4 +1,4 @@
-package com.atguigu.boot.activemq.produce;
+package com.atguigu.boot.activemq.consumer;
 
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
